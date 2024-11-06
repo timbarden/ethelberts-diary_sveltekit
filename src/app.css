@@ -1,0 +1,88 @@
+:root {
+    --col-txt: 255, 255, 255;
+    --bg: 17, 17, 17;
+    --bg-over: 255, 255, 255;
+    --theme-pri: 66, 185, 131;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font: 400 1em/1.6 "Nunito", sans-serif;
+    letter-spacing: 0.06em;
+    background: rgb(var(--bg));
+    color: rgb(var(--col-txt));
+}
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    color: rgb(var(--theme-pri));
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+a {
+    color: inherit;
+}
+header,
+main,
+footer {
+    padding: .75em 0;
+}
+header {
+    background: rgba(var(--bg-over), .04);
+}
+main {
+    min-height: 70vh;
+}
+footer {
+    background: rgba(var(--theme-pri), .1);
+    margin-top: auto;
+}
+
+.center {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/* based on 1300px max */
+@media all and (min-width: 1443px) {
+    .center {
+        padding-left: calc(50% - 650px);
+        padding-right: calc(50% - 650px);
+    }
+}
+.menu {
+    text-align: left;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 -.75em;
+    }
+    li {
+        display: inline-block;
+        margin: 0 .75em;
+    }
+    a {
+        display: block;
+        padding: .5em 0;
+        text-decoration: none;
+        &:hover:not(.router-link-active) {
+            color: rgba(var(--col-txt), .7);
+        }
+        &.router-link-active {
+            color: rgb(var(--theme-pri));
+            text-decoration: underline;
+            text-underline-position: under;
+            text-decoration-style: wavy;
+            text-decoration-thickness: .1em;
+        }
+    }
+}
