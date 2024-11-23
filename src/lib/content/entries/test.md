@@ -12,6 +12,7 @@ In 1920 he remarried to Lillian Barratt and continued in the retail trade in New
 
 Ethelbert died at Newport on the 27th January 1958, aged 87.
 
-<img src="/content/photo_postcard.png" 
-     alt="Image text"
-     loading="lazy">
+<figure>
+    <figcaption>A postcard sent by Ethelbert to his son, whilst staying on HMS Hindustan at the Royal Naval Barracks, Chatham Dockyard. Postmarked Rochester and Chatham 26th May 1919, a week before the trip to Russia.</figcaption>
+    <img class="entry__photo" src="/content/photo_postcard.png" sizes="90vw" srcset="/content/photo_postcard-sml.png 400w, /content/photo_postcard-med.png 650w, /content/photo_postcard-lrg.png 900w" alt="Postcard">
+</figure>

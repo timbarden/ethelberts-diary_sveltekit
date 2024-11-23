@@ -320,7 +320,7 @@ a {
 }
 .entry p {
 	a {
-		color: #6a6a69;
+		color: var(--col-pri);
 	}
 	span {
 		color: var(--col-pri);
@@ -384,10 +384,13 @@ figcaption {
 	padding: 2em 4em;
 	margin: 1em 0;
 	font-family: "Andada", serif;
-	font-size: .9em;
+	font-size: 13px;
 	letter-spacing: .05em;
 	border: 5px double #ccc;
-	i {
+	&:before,
+	&:after {
+		position: relative;
+		content: '~';
 		margin: 0 .5em;
 	}
 }
@@ -491,6 +494,22 @@ figcaption {
 	width: 1em;
 	height: 1em;
 	margin-right: .65em;
+}
+
+.footnotes-sep {
+	border: none;
+	border-top: 1px solid #444;
+	margin-top: 3em;
+}
+.footnotes {
+	color: #444;
+	font-size: 12px;
+	ol {
+		padding-left: 2em;
+	}
+	p {
+		margin: .25em 0;
+	}
 }
 
 /*--------------------------*/

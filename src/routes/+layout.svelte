@@ -2,6 +2,6 @@
     import '../app.css'
 </script>
 
-<div class="entry aged">
+<article class="entry aged">
     <slot />
-</div>
+</article>
