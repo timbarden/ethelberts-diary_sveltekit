@@ -1,2 +1,17 @@
-<h1>About Us</h1>
-<p>This is the about us page.</p>
+<script>
+	import MarkdownIt from "markdown-it";
+	import markdownContent from "$lib/content/entries/test.md?raw";
+
+	const md = new MarkdownIt();
+</script>
+
+<svelte:head>
+	<title>Ethelbert's Diary | About</title>
+	<meta
+		data-key="description"
+		name="description"
+		content="Some background and context to the diary."
+	/>
+</svelte:head>
+
+{@html md.render(markdownContent)}
