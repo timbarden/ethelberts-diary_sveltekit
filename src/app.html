@@ -21,44 +21,48 @@
 
 	<body data-sveltekit-preload-data="hover">
 
-		<header class="header inner posrel center" id="header">
-			<a href="/" class="header_logo">
-				<img src="/design/logo.svg" alt="Ethelbert's">
-				<span class="header_title font--serif caps">Diary</span>
-			</a>
-			<p class="header_subtitle posrel">North Russian Expeditionary Force 1919</p>
+		<header class="header posrel center" id="header">
+			<div class="header_main">
+				<div class="inner">
+					<a href="/" class="header_logo">
+						<img src="/design/logo.svg" alt="Ethelbert's">
+						<span class="header_title font--serif caps">Diary</span>
+					</a>
+					<p class="header_subtitle posrel">North Russian Expeditionary Force 1919</p>
+				</div>
+			</div>
+
+			<nav class="menu posrel font--serif caps">
+				<div class="menu_bg inner aged">
+					<button class="menu_btn posrel font--serif aged">
+						<svg viewBox="0 0 24 24" width="24" height="24">
+							<path d="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z"/>
+							<path d="M0 0h24v24H0z" fill="none"/>
+						</svg>
+						<span>MENU</span>
+					</button>
+					<ul class="menu_list posrel">
+						<li class="menu_itm menu_itm--01"><a href="/">Home</a></li>
+						<li class="menu_itm menu_itm--02"><a href="/about">About</a></li>
+						<li class="menu_itm menu_itm--03">
+							<a href="/diary/june">Read Diary</diary/a>
+							<button class="menu_itm_btn btn posabs">
+								<svg width='20' height='20'><use xlink:href='#icon_arrow' x='0' y='0'/></svg>
+							</button>
+							<ul class="submenu_list aged">
+								<li class="submenu_itm"><a href="/diary/june">June</a></li>
+									<li class="submenu_itm"><a href="/diary/july">July</a></li>
+								<li class="submenu_itm"><a href="/diary/august">August</a></li>
+								<li class="submenu_itm"><a href="/diary/september">september</a></li>
+								<li class="submenu_itm"><a href="/diary/october">october</a></li>
+							</ul>
+						</li>
+						<li class="menu_itm menu_itm--04"><a href="/download">Download</a></li>
+					</ul>
+				</div>
+			</nav>
 		</header>
 		
-		<nav class="menu section center font--serif caps">
-			<div class="menu_bg inner aged">
-				<button class="menu_btn posrel font--serif aged">
-					<svg viewBox="0 0 24 24" width="24" height="24">
-						<path d="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z"/>
-						<path d="M0 0h24v24H0z" fill="none"/>
-					</svg>
-					<span>MENU</span>
-				</button>
-				<ul class="menu_list posrel">
-					<li class="menu_itm menu_itm--01"><a href="/">Home</a></li>
-					<li class="menu_itm menu_itm--02"><a href="/about">About</a></li>
-					<li class="menu_itm menu_itm--03">
-						<a href="/diary/june">Read Diary</diary/a>
-						<button class="menu_itm_btn btn posabs">
-							<svg width='20' height='20'><use xlink:href='#icon_arrow' x='0' y='0'/></svg>
-						</button>
-						<ul class="submenu_list aged">
-							<li class="submenu_itm"><a href="/diary/june">June</a></li>
-								<li class="submenu_itm"><a href="/diary/july">July</a></li>
-							<li class="submenu_itm"><a href="/diary/august">August</a></li>
-							<li class="submenu_itm"><a href="/diary/september">september</a></li>
-							<li class="submenu_itm"><a href="/diary/october">october</a></li>
-						</ul>
-					</li>
-					<li class="menu_itm menu_itm--04"><a href="/download">Download</a></li>
-				</ul>
-			</div>
-		</nav>
-
 		<main class="main">
 			<div class="inner">
 				%sveltekit.body%
@@ -68,6 +72,5 @@
 		<footer class="footer center">
 			<p>© 2024 <span class='sep'>|</span> <a href="mailto:hello@ethelbertsdiary.co.uk">hello@ethelbertsdiary.co.uk</a> <span class='sep'>|</span> website by <a href="http://tim-barden.co.uk/" target="_blank">Tim Barden</a></p>
 		</footer>
-
 	</body>
 </html>

@@ -94,7 +94,7 @@ a {
 /*--------------------------*/
 /* HEADER
 /*--------------------------*/
-.header {
+.header_main {
 	padding: 3.2em 5%;
 	padding: clamp(2em, 3vw, 3.2em) 5%;
 }
@@ -315,8 +315,9 @@ a {
 	padding: 3.5em 9% 4.5em;
 	margin-bottom: 2em;
 	position: relative;
-	border-top: 1px solid var(--col-ter);
-	background: #f2f1ef url('/design/main_bg.jpg');
+	border-top: 1px solid rgba(0, 0, 0, .4);
+	background: url('/design/home_bg.png') top center repeat-y, url('/design/main_bg.jpg') top left repeat;
+	background-color: #f2f1ef;
 }
 .entry p {
 	a {
@@ -515,9 +516,6 @@ figcaption {
 /*--------------------------*/
 /* HOME ADJUSTMENTS
 /*--------------------------*/
-.home__bg {
-	background: url('/design/home_bg.png') repeat-y top center;
-}
 .container--home {
 	.entry {
 		background: none;
